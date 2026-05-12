@@ -37,28 +37,28 @@ const roomCards = [
   {
     title: "Vista Premium Room",
     price: "₹5,500",
-    cadence: "/night",
+    cadence: "/Month",
     status: "Available",
     image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
+      "https://res.cloudinary.com/ds0uepaoz/image/upload/v1778613711/vijayasha-family-fatehpur-bhagalpur-hostel-for-boy-students-7o6or91sdz_abk5jj.jpg",
     features: ["WiFi", "Attached bathroom", "TV", "Balcony", "Hot water"],
   },
   {
     title: "Cedar Deluxe Stay",
     price: "₹10,500",
     cadence: "/month",
-    status: "Few left",
+    status: "Available",
     image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80&sat=-20",
+      "https://res.cloudinary.com/ds0uepaoz/image/upload/v1778613713/vijayasha-family-fatehpur-bhagalpur-hostel-for-boy-students-rk7xv2rqo4_eosbnb.jpg",
     features: ["WiFi", "Study desk", "Heater", "Attached bathroom", "Mountain view"],
   },
   {
     title: "Family Balcony Suite",
     price: "₹6,500",
-    cadence: "/night",
+    cadence: "/Month",
     status: "Available",
     image:
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80",
+      "https://res.cloudinary.com/ds0uepaoz/image/upload/v1778613713/vijayasha-family-bhagalpur-hostel-for-boy-students-pkhvra7qrs_ojtgn2.jpg",
     features: ["Kitchenette", "TV", "Balcony", "Hot water", "4 guests"],
   },
 ];
@@ -75,55 +75,55 @@ const amenityCards = [
 ];
 
 const galleryImages = [
-  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80",
-  "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=900&q=80",
-  "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80",
-  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
-  "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80",
-  "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=900&q=80",
+  "https://res.cloudinary.com/ds0uepaoz/image/upload/v1778613713/vijayasha-family-bhagalpur-hostel-for-boy-students-pkhvra7qrs_ojtgn2.jpg",
+  "https://res.cloudinary.com/ds0uepaoz/image/upload/v1778613712/vijayasha-family-fatehpur-bhagalpur-hostel-for-boy-students-r08sf7tb6x_wnztta.jpg",
+  "https://res.cloudinary.com/ds0uepaoz/image/upload/v1778613713/vijayasha-family-fatehpur-bhagalpur-hostel-for-boy-students-rk7xv2rqo4_eosbnb.jpg",
+  "https://res.cloudinary.com/ds0uepaoz/image/upload/v1778613584/room1_kevk5j.avif",
+  "https://res.cloudinary.com/ds0uepaoz/image/upload/v1778613588/building1_kia1j2.png",
+  "https://res.cloudinary.com/ds0uepaoz/image/upload/v1778613710/vijayasha-family-fatehpur-bhagalpur-hostel-for-boy-students-e5n7isx5b9_1_a0izrh.jpg",
 ];
 
-const testimonials = [
+const guestReviews = [
   {
-    name: "Aarav Mehta",
-    type: "Weekend traveler",
+    name: "MITHUN KUMAR",
+    type: "Student",
     quote:
-      "Everything felt calm, premium, and genuinely cared for. The balcony sunrise alone made the trip worth it.",
+      "Awasome hostel with good facility and security, owner is very cool and polite , Care like family  member.",
   },
   {
-    name: "Naina Sood",
-    type: "Student guest",
+    name: "GAJENDRA SINGH",
+    type: "Student",
     quote:
-      "Reliable WiFi, spotless rooms, and a peaceful environment near markets. It felt safe and beautifully maintained.",
+      "Best hostel facility provided only for boys.good environment for studies.seperate rooms and 24 hours water and electricity supply.",
   },
   {
-    name: "Priya & Kunal",
-    type: "Family stay",
+    name: "AJAY CHAURASIA",
+    type: "Guest",
     quote:
-      "The family hosts were warm and professional. It had the polish of a boutique stay with the comfort of home.",
+      "Good hostel with all facility for student and bachlor employee.Every one enjoy the place and facility.",
   },
 ];
 
 const attractions = [
   {
-    title: "Mall Road",
-    distance: "10 mins drive",
-    text: "Cafes, shopping, local handicrafts, and evening walks in the heart of town.",
-  },
-  {
-    title: "Hadimba Temple",
+    title: "Kuppaghat Ashram",
     distance: "15 mins drive",
-    text: "A peaceful cedar forest landmark perfect for slow sightseeing and photography.",
+    text: "A serene, peaceful ashram on the Ganga banks, associated with saint Maharshi Mehi Paramhans.",
   },
   {
-    title: "Solang Valley",
-    distance: "35 mins drive",
-    text: "Adventure sports, scenic mountain views, and snow season activities nearby.",
+    title: "Ajgaivinath Temple (Sultanganj)",
+    distance: "60 mins drive",
+    text: "A revered temple dedicated to Lord Shiva situated on a rock formation in the middle of the Ganga.",
   },
   {
-    title: "Jogini Falls Trail",
-    distance: "25 mins drive",
-    text: "A refreshing short hike for travelers who want nature, water, and quiet views.",
+    title: "Mandar Hill",
+    distance: "70 km",
+    text: "A sacred hill with immense mythological significance, located roughly 70 km from Bhagalpur, believed to be used in the churning of the ocean (Samudra Manthan).",
+  },
+  {
+    title: "Vikramshila Gangetic Dolphin Sanctuary",
+    distance: "15 mins drive",
+    text: "Asia's only sanctuary dedicated to dolphins, stretching along the Ganges, ideal for eco-tourism.",
   },
 ];
 
@@ -162,7 +162,7 @@ export default function App() {
     }, 1200);
 
     const interval = window.setInterval(() => {
-      setActiveReview((current) => (current + 1) % testimonials.length);
+      setActiveReview((current) => (current + 1) % guestReviews.length);
     }, 4500);
 
     const onScroll = () => setShowTopButton(window.scrollY > 500);
@@ -190,9 +190,9 @@ export default function App() {
               <motion.div
                 animate={{ scale: [1, 1.08, 1], opacity: [0.85, 1, 0.85] }}
                 transition={{ duration: 1.8, repeat: Number.POSITIVE_INFINITY }}
-                className="mx-auto flex h-24 w-24 items-center justify-center rounded-[2rem] border border-white/15 bg-white/10 shadow-glow backdrop-blur-xl"
+                className="mx-auto flex h-24 w-24 items-center justify-center overflow-hidden rounded-[2rem] border border-white/15 bg-white/10 shadow-glow backdrop-blur-xl"
               >
-                <Mountain className="h-10 w-10 text-white" />
+                <img src="/Vijayasha.png" alt="Vijayasha Logo" className="h-full w-full object-cover" />
               </motion.div>
               <p className="mt-6 font-display text-4xl font-semibold text-white">VIJAYASHA FAMILY</p>
               <div className="mx-auto mt-4 h-1.5 w-56 overflow-hidden rounded-full bg-white/10">
@@ -210,8 +210,8 @@ export default function App() {
       <div className="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-black/10 backdrop-blur-2xl">
         <div className="section-shell flex h-20 items-center justify-between">
           <a href="#home" className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/15 text-white shadow-glow backdrop-blur-xl">
-              <Home className="h-5 w-5" />
+            <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl bg-white/15 text-white shadow-glow backdrop-blur-xl">
+              <img src="/Vijayasha.png" alt="Vijayasha Logo" className="h-full w-full object-cover" />
             </div>
             <div>
               <p className="font-display text-2xl font-semibold tracking-wide text-white">VIJAYASHA FAMILY</p>
@@ -288,8 +288,7 @@ export default function App() {
                   Comfortable Rooms & Peaceful Stay in VIJAYASHA FAMILY
                 </h1>
                 <p className="mt-6 max-w-2xl text-lg leading-8 text-white/78 sm:text-xl">
-                  Affordable, clean and premium rooms for tourists, students and travelers with mountain calm,
-                  trusted family hospitality, and a boutique stay feel.
+                  Modern and comfortable rooms designed for travelers, students, and working professionals.
                 </p>
 
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -303,9 +302,9 @@ export default function App() {
 
                 <div className="mt-10 grid max-w-2xl gap-4 sm:grid-cols-3">
                   {[
-                    ["Mountain-facing rooms", "Boutique comfort"],
+                    ["CCTV Security", "24/7 monitored security for a safe and worry-free stay experience."],
                     ["Parking + WiFi", "Everyday convenience"],
-                    ["Family-run hospitality", "Trusted local care"],
+                    ["OWNER", "Trusted family  care"],
                   ].map(([title, subtitle]) => (
                     <div key={title} className="glass-panel rounded-3xl p-4 text-white">
                       <p className="font-semibold">{title}</p>
@@ -325,16 +324,16 @@ export default function App() {
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <p className="text-xs uppercase tracking-[0.32em] text-white/55">Featured Stay</p>
-                      <h2 className="mt-3 font-display text-3xl">Mountain View Suite</h2>
+                      <h2 className="mt-3 font-display text-3xl">Room View</h2>
                     </div>
                     <span className="rounded-full bg-emerald-400/18 px-3 py-1 text-xs font-semibold text-emerald-200">
-                      Available Today
+                      Available
                     </span>
                   </div>
 
                   <div className="mt-6 overflow-hidden rounded-[1.5rem]">
                     <img
-                      src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80"
+                      src="https://res.cloudinary.com/ds0uepaoz/image/upload/v1778613586/image2_wfpiy6.jpg"
                       alt="Luxury mountain suite"
                       className="h-72 w-full object-cover"
                     />
@@ -343,7 +342,7 @@ export default function App() {
                   <div className="mt-6 grid grid-cols-2 gap-3 text-sm text-white/72">
                     <div className="glass-panel rounded-2xl p-4">
                       <p className="font-semibold text-white">Private balcony</p>
-                      <p className="mt-1">Sunrise valley view</p>
+                      <p className="mt-1">Sunrise view</p>
                     </div>
                     <div className="glass-panel rounded-2xl p-4">
                       <p className="font-semibold text-white">Fast internet</p>
@@ -383,23 +382,17 @@ export default function App() {
               <div className="relative">
                 <div className="absolute -left-4 top-8 h-24 w-24 rounded-full bg-mist/70 blur-3xl dark:bg-pine/50" />
                 <img
-                  src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1100&q=80"
+                  src="https://res.cloudinary.com/ds0uepaoz/image/upload/v1778613588/building1_kia1j2.png"
                   alt="Family homestay exterior"
                   className="h-[560px] w-full rounded-[2rem] object-cover shadow-glow"
                 />
-                <div className="glass-panel absolute -bottom-8 right-6 max-w-xs rounded-[1.75rem] p-5">
-                  <p className="text-sm font-semibold uppercase tracking-[0.28em] text-pine dark:text-mist">Why guests return</p>
-                  <p className="mt-3 text-lg font-semibold text-ink dark:text-white">
-                    Quiet surroundings, clean rooms, scenic mountain mornings, and responsive local hosts.
-                  </p>
-                </div>
               </div>
 
               <div className="lg:pl-10">
                 <SectionHeader
                   eyebrow="About The Property"
                   title="A professional and peaceful family-owned stay with boutique warmth."
-                  text="VIJAYASHA FAMILY is designed for guests who want clean, premium accommodation without losing the comfort of a local Himachali home. Guests enjoy mountain views, parking, strong WiFi, nearby markets, smooth check-ins, and the quiet atmosphere that longer stays need."
+                  text="VIJAYASHA FAMILY offers clean, comfortable, and premium accommodations with the warmth of a trusted family-owned stay in Bhagalpur. Guests enjoy peaceful surroundings, nearby markets, parking facilities, strong WiFi connectivity, smooth check-ins, and a relaxing atmosphere ideal for both short and long stays."
                 />
 
                 <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -414,7 +407,7 @@ export default function App() {
                     },
                     {
                       title: "Trusted comfort",
-                      text: "Thoughtful housekeeping, attached bathrooms, hot water, and guest-first support.",
+                      text: "Comfortable living with modern facilities, peaceful surroundings, and attentive support.",
                     },
                     {
                       title: "Ideal for all stays",
@@ -436,7 +429,7 @@ export default function App() {
           <div className="section-shell">
             <SectionHeader
               eyebrow="Room Listing"
-              title="Premium rooms crafted for short escapes and longer mountain stays."
+              title="Premium rooms designed for comfortable family stays and peaceful living experiences."
               text="Each room combines practical comfort with a more elevated, hotel-style feel. Hover over a card to explore the details."
             />
 
@@ -506,7 +499,7 @@ export default function App() {
           <div className="section-shell">
             <SectionHeader
               eyebrow="Gallery"
-              title="A masonry-style visual story of mountain mornings and refined interiors."
+              title="A premium visual showcase of comfortable rooms and elegant living spaces."
               text="Clean lines, natural views, cozy corners, and the relaxed luxury guests expect from a modern homestay."
               align="center"
             />
@@ -574,7 +567,7 @@ export default function App() {
         <section className="py-24 sm:py-28">
           <div className="section-shell">
             <SectionHeader
-              eyebrow="Testimonials"
+              eyebrow="Guest Reviews"
               title="Guest feedback presented like a premium booking platform."
               text="A modern slider layout with glass cards, star ratings, and smooth transitions."
               align="center"
@@ -584,7 +577,7 @@ export default function App() {
               <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
                 <AnimatePresence mode="wait">
                   <motion.div
-                    key={testimonials[activeReview].name}
+                    key={guestReviews[activeReview].name}
                     initial={{ opacity: 0, y: 22 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -18 }}
@@ -597,11 +590,11 @@ export default function App() {
                       ))}
                     </div>
                     <p className="font-display text-3xl leading-tight sm:text-4xl">
-                      “{testimonials[activeReview].quote}”
+                      “{guestReviews[activeReview].quote}”
                     </p>
                     <div className="mt-6">
-                      <p className="text-lg font-semibold">{testimonials[activeReview].name}</p>
-                      <p className="text-sm text-white/62">{testimonials[activeReview].type}</p>
+                      <p className="text-lg font-semibold">{guestReviews[activeReview].name}</p>
+                      <p className="text-sm text-white/62">{guestReviews[activeReview].type}</p>
                     </div>
                   </motion.div>
                 </AnimatePresence>
@@ -609,14 +602,14 @@ export default function App() {
                 <div className="flex items-center gap-3">
                   <button
                     type="button"
-                    onClick={() => setActiveReview((current) => (current - 1 + testimonials.length) % testimonials.length)}
+                    onClick={() => setActiveReview((current) => (current - 1 + guestReviews.length) % guestReviews.length)}
                     className="flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-white/5 transition hover:bg-white/10"
                   >
                     <ChevronLeft className="h-5 w-5" />
                   </button>
                   <button
                     type="button"
-                    onClick={() => setActiveReview((current) => (current + 1) % testimonials.length)}
+                    onClick={() => setActiveReview((current) => (current + 1) % guestReviews.length)}
                     className="flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-white/5 transition hover:bg-white/10"
                   >
                     <ChevronRight className="h-5 w-5" />
@@ -625,7 +618,7 @@ export default function App() {
               </div>
 
               <div className="mt-8 grid gap-4 sm:grid-cols-3">
-                {testimonials.map((item, index) => (
+                {guestReviews.map((item, index) => (
                   <button
                     key={item.name}
                     type="button"
@@ -648,8 +641,8 @@ export default function App() {
           <div className="section-shell">
             <SectionHeader
               eyebrow="Nearby Attractions"
-              title="Popular Bhagalpur highlights within comfortable reach of the property."
-              text="These interactive cards help guests imagine their itinerary before they book."
+              title="Explore the best places in Bhagalpur just minutes away from your stay.”"
+
             />
 
             <div className="mt-14 grid gap-5 lg:grid-cols-4">
@@ -683,8 +676,8 @@ export default function App() {
               <div className="rounded-[2.5rem] bg-[linear-gradient(180deg,#eef4fb,#e0ebe7)] p-8 shadow-glass dark:bg-[linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.03))] sm:p-10">
                 <SectionHeader
                   eyebrow="Contact"
-                  title="Reach out for direct booking, directions, or stay details."
-                  text="This section combines contact information, a WhatsApp CTA, and map presentation in a clean premium layout."
+                  title="Reach out for direct booking, directions or details."
+
                 />
 
                 <div className="mt-10 space-y-6">
@@ -694,7 +687,7 @@ export default function App() {
                     </div>
                     <div>
                       <p className="font-semibold text-ink dark:text-white">Phone / WhatsApp</p>
-                      <p className="mt-1 text-sm text-slate dark:text-white/66">+91 98765 43210</p>
+                      <p className="mt-1 text-sm text-slate dark:text-white/66">+91 7909034209</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
@@ -704,7 +697,9 @@ export default function App() {
                     <div>
                       <p className="font-semibold text-ink dark:text-white">Address</p>
                       <p className="mt-1 text-sm text-slate dark:text-white/66">
-                        Near Mall Road, Manali, VIJAYASHA FAMILY, India
+                        RANI TALAB, BEHIND ANG VIHAR APPARTMENT
+                        NEAR ENGINEERING COLLEGE, SABOUR
+                        BHAGALPUR, BIHAR - 813210
                       </p>
                     </div>
                   </div>
@@ -729,19 +724,26 @@ export default function App() {
                       className="w-full rounded-2xl border border-black/8 bg-white/80 px-4 py-4 outline-none transition focus:border-pine focus:ring-2 focus:ring-pine/15 dark:border-white/10 dark:bg-white/10 dark:text-white"
                     />
                     <input
-                      type="email"
-                      placeholder="Email"
+                      type="tel"
+                      pattern="[0-9]{10}"
+                      maxLength={10}
+                      placeholder="Mobile Number"
                       className="w-full rounded-2xl border border-black/8 bg-white/80 px-4 py-4 outline-none transition focus:border-pine focus:ring-2 focus:ring-pine/15 dark:border-white/10 dark:bg-white/10 dark:text-white"
+                      onKeyPress={(e) => {
+                        if (!/[0-9]/.test(e.key)) {
+                          e.preventDefault();
+                        }
+                      }}
                     />
                   </div>
                   <input
-                    type="text"
-                    placeholder="Subject"
+                    type="email"
+                    placeholder="Email ID"
                     className="w-full rounded-2xl border border-black/8 bg-white/80 px-4 py-4 outline-none transition focus:border-pine focus:ring-2 focus:ring-pine/15 dark:border-white/10 dark:bg-white/10 dark:text-white"
                   />
                   <textarea
                     rows="5"
-                    placeholder="Tell us about your stay dates or room requirements"
+                    placeholder="Tell us about your room requirements"
                     className="w-full rounded-2xl border border-black/8 bg-white/80 px-4 py-4 outline-none transition focus:border-pine focus:ring-2 focus:ring-pine/15 dark:border-white/10 dark:bg-white/10 dark:text-white"
                   />
                   <button
@@ -772,7 +774,7 @@ export default function App() {
           <div>
             <p className="font-display text-3xl font-semibold">VIJAYASHA FAMILY</p>
             <p className="mt-4 max-w-md text-sm leading-7 text-slate dark:text-white/66">
-              A modern, premium room rental website concept for a family-owned Himachal homestay with direct booking, responsive UI, and trust-first design.
+              VIJAYASHA FAMILY offers modern rental rooms in Bhagalpur with a safe environment, 24/7 essential facilities, and comfortable accommodations for a premium living experience.
             </p>
           </div>
           <div>
@@ -788,9 +790,9 @@ export default function App() {
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-pine dark:text-mist">Contact</p>
             <div className="mt-4 space-y-3 text-sm text-slate dark:text-white/66">
-              <p>+91 98765 43210</p>
-              <p>stay@himalayanretreat.com</p>
-              <p>Manali, VIJAYASHA FAMILY</p>
+              <p>+91 7909034209</p>
+              <p>mithun29@gmail.com</p>
+              <p>RANI TALAB, BEHIND ANG VIHAR APPARTMENT NEAR ENGINEERING COLLEGE, SABOUR, BHAGALPUR, BIHAR - 813210</p>
             </div>
           </div>
           <div>
