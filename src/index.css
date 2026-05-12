@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-base font-sans text-ink antialiased transition-colors duration-500;
+}
+
+body.dark {
+  @apply bg-night text-white;
+}
+
+@layer components {
+  .glass-panel {
+    @apply border border-white/30 bg-white/55 shadow-glass backdrop-blur-2xl dark:border-white/10 dark:bg-white/10;
+  }
+
+  .section-shell {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .section-title {
+    @apply font-display text-4xl font-semibold tracking-tight text-ink dark:text-white sm:text-5xl;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.35em] text-pine dark:text-mist;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(34, 84, 72, 0.6) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(34, 84, 72, 0.45);
+  border-radius: 999px;
+}
