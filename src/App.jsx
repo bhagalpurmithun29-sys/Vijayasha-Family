@@ -751,6 +751,14 @@ export default function App() {
                   </div>
                 </div>
 
+                <a
+                  href="https://wa.me/919876543210"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-8 inline-flex rounded-full bg-[#25D366] px-6 py-4 text-sm font-semibold text-white transition hover:-translate-y-1"
+                >
+                  WhatsApp Booking
+                </a>
               </div>
 
               <div className="glass-panel rounded-[2.5rem] p-6 sm:p-8">
@@ -880,6 +888,16 @@ export default function App() {
           © 2026 VIJAYASHA FAMILY. All rights reserved.
         </div>
       </footer>
+
+      <a
+        href="https://wa.me/919876543210"
+        target="_blank"
+        rel="noreferrer"
+        className="fixed bottom-6 right-6 z-30 flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-glow transition hover:scale-105"
+        aria-label="Book via WhatsApp"
+      >
+        <Phone className="h-7 w-7" />
+      </a>
 
 
 
