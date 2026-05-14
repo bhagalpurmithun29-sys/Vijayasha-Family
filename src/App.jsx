@@ -11,7 +11,7 @@ import {
   Instagram,
   MapPin,
   Menu,
-  Mountain,
+  Droplets,
   ParkingCircle,
   Phone,
   ShieldCheck,
@@ -61,14 +61,14 @@ const roomCards = [
 ];
 
 const amenityCards = [
-  { icon: Wifi, label: "Free WiFi" },
-  { icon: ParkingCircle, label: "Parking" },
-  { icon: Mountain, label: "Mountain View" },
-  { icon: Bath, label: "Attached Bathroom" },
-  { icon: UtensilsCrossed, label: "Kitchen" },
-  { icon: Waves, label: "Hot Water" },
-  { icon: ShieldCheck, label: "CCTV Security" },
-  { icon: Headset, label: "24/7 Support" },
+  { icon: Wifi, label: "Free WiFi", description: "High-speed internet access for work, entertainment, and seamless connectivity." },
+  { icon: ParkingCircle, label: "Parking", description: "Safe and convenient parking space available for guests and visitors." },
+  { icon: Droplets, label: "Water Availability", description: "24/7 clean water supply ensuring comfort throughout your stay." },
+  { icon: Bath, label: "Attached Bathroom", description: "Private attached bathrooms designed for hygiene, comfort, and convenience." },
+  { icon: UtensilsCrossed, label: "Kitchen", description: "Functional kitchen access for daily cooking and comfortable long stays." },
+  { icon: Waves, label: "Hot Water", description: "Reliable hot water facilities available for a relaxing experience anytime." },
+  { icon: ShieldCheck, label: "CCTV Security", description: "Continuous CCTV monitoring for enhanced safety and peace of mind." },
+  { icon: Headset, label: "24/7 Support", description: "Friendly guest assistance available anytime for a smooth and comfortable stay." },
 ];
 
 const galleryImages = [
@@ -599,7 +599,7 @@ export default function App() {
                       </div>
                       <h3 className="mt-5 text-lg font-semibold text-ink dark:text-white">{item.label}</h3>
                       <p className="mt-2 text-sm leading-7 text-slate dark:text-white/66">
-                        Seamless comfort that supports leisure, family travel, and longer bookings.
+                        {item.description}
                       </p>
                     </motion.div>
                   );
@@ -751,14 +751,6 @@ export default function App() {
                   </div>
                 </div>
 
-                <a
-                  href="https://wa.me/919876543210"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-8 inline-flex rounded-full bg-[#25D366] px-6 py-4 text-sm font-semibold text-white transition hover:-translate-y-1"
-                >
-                  WhatsApp Booking
-                </a>
               </div>
 
               <div className="glass-panel rounded-[2.5rem] p-6 sm:p-8">
@@ -889,15 +881,6 @@ export default function App() {
         </div>
       </footer>
 
-      <a
-        href="https://wa.me/919876543210"
-        target="_blank"
-        rel="noreferrer"
-        className="fixed bottom-6 right-6 z-30 flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-glow transition hover:scale-105"
-        aria-label="Book via WhatsApp"
-      >
-        <Phone className="h-7 w-7" />
-      </a>
 
 
       <AnimatePresence>
