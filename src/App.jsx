@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import emailjs from "@emailjs/browser";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   Bath,
@@ -146,6 +147,55 @@ export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeReview, setActiveReview] = useState(0);
   const [showTopButton, setShowTopButton] = useState(false);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    mobile: "",
+    email: "",
+    requirements: ""
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+
+  const handleFormChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      mobile_number: formData.mobile,
+      message: formData.requirements,
+    };
+
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAIL_JS_SERVICE_ID,
+        import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setIsSubmitting(false);
+          setSubmitStatus("success");
+          setFormData({ name: "", mobile: "", email: "", requirements: "" });
+          setTimeout(() => setSubmitStatus(null), 5000);
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          setIsSubmitting(false);
+          setSubmitStatus("error");
+          setTimeout(() => setSubmitStatus(null), 5000);
+        }
+      );
+  };
 
   useEffect(() => {
     document.body.classList.toggle("dark", darkMode);
@@ -712,15 +762,23 @@ export default function App() {
               </div>
 
               <div className="glass-panel rounded-[2.5rem] p-6 sm:p-8">
-                <form className="grid gap-5">
+                <form className="grid gap-5" onSubmit={handleFormSubmit}>
                   <div className="grid gap-5 md:grid-cols-2">
                     <input
                       type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleFormChange}
+                      required
                       placeholder="Name"
                       className="w-full rounded-2xl border border-black/8 bg-white/80 px-4 py-4 outline-none transition focus:border-pine focus:ring-2 focus:ring-pine/15 dark:border-white/10 dark:bg-white/10 dark:text-white"
                     />
                     <input
                       type="tel"
+                      name="mobile"
+                      value={formData.mobile}
+                      onChange={handleFormChange}
+                      required
                       pattern="[0-9]{10}"
                       maxLength={10}
                       placeholder="Mobile Number"
@@ -734,20 +792,35 @@ export default function App() {
                   </div>
                   <input
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleFormChange}
+                    required
                     placeholder="Email ID"
                     className="w-full rounded-2xl border border-black/8 bg-white/80 px-4 py-4 outline-none transition focus:border-pine focus:ring-2 focus:ring-pine/15 dark:border-white/10 dark:bg-white/10 dark:text-white"
                   />
                   <textarea
+                    name="requirements"
+                    value={formData.requirements}
+                    onChange={handleFormChange}
+                    required
                     rows="5"
                     placeholder="Tell us about your room requirements"
                     className="w-full rounded-2xl border border-black/8 bg-white/80 px-4 py-4 outline-none transition focus:border-pine focus:ring-2 focus:ring-pine/15 dark:border-white/10 dark:bg-white/10 dark:text-white"
                   />
                   <button
-                    type="button"
-                    className="rounded-full bg-ink px-6 py-4 text-sm font-semibold text-white transition hover:bg-pine dark:bg-white dark:text-ink"
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="rounded-full bg-ink px-6 py-4 text-sm font-semibold text-white transition hover:bg-pine dark:bg-white dark:text-ink disabled:opacity-70"
                   >
-                    Send Message
+                    {isSubmitting ? "Sending..." : "Send Message"}
                   </button>
+                  {submitStatus === "success" && (
+                    <p className="text-sm text-emerald-600 dark:text-emerald-400 text-center font-medium">Message sent successfully!</p>
+                  )}
+                  {submitStatus === "error" && (
+                    <p className="text-sm text-red-600 dark:text-red-400 text-center font-medium">Failed to send message. Please try again.</p>
+                  )}
                 </form>
 
                 <div className="mt-6 overflow-hidden rounded-[2rem] border border-black/6 dark:border-white/10">
