@@ -56,7 +56,7 @@ const roomCards = [
     status: "Available",
     image:
       "https://res.cloudinary.com/ds0uepaoz/image/upload/v1778613713/vijayasha-family-bhagalpur-hostel-for-boy-students-pkhvra7qrs_ojtgn2.jpg",
-    features: ["Kitchenette", "TV", "Balcony", "Hot water", "4 guests"],
+    features: ["Kitchenette", "TV", "Balcony", "Hot water"],
   },
 ];
 
@@ -517,16 +517,7 @@ export default function App() {
                       <BedDouble className="mt-1 h-5 w-5 text-pine dark:text-mist" />
                     </div>
 
-                    <div className="mt-5 flex flex-wrap gap-2">
-                      {room.features.map((feature) => (
-                        <span
-                          key={feature}
-                          className="rounded-full bg-cloud px-3 py-2 text-xs font-medium text-ink dark:bg-white/10 dark:text-white/78"
-                        >
-                          {feature}
-                        </span>
-                      ))}
-                    </div>
+
 
                     <button
                       type="button"
